@@ -6,6 +6,10 @@ This repo is the complete, tested path, written from a real run on a **Paperwhit
 
 > Be realistic about the result. E-ink refreshes every 5 minutes at best, the Kindle has to stay plugged in (it keeps Wi-Fi on and never sleeps), and jailbreaking wipes the Kindle's content. This is a fun experiment for an old device. If you want live AI usage on a desk, a purpose-built device is a better tool.
 
+![The Kindle dashboard (right) next to a ClawTicker showing the same Claude usage](docs/images/kindle-dashboard-with-clawticker.jpg)
+
+*A Paperwhite 3 running the dashboard in landscape (right), next to a [ClawTicker](https://github.com/nateQQ/clawticker) showing the same Personal-account numbers.*
+
 ## What you get
 
 - Full-screen dashboard in KOReader: clock, date, optional Vietnamese lunar calendar, weather, UV, air quality, 3-day forecast.
@@ -31,6 +35,17 @@ The Kindle cannot see your Claude usage by itself, so the server hands it two nu
 - A USB cable that carries data, not a charge-only one.
 - A computer that stays on in the same network as the Kindle (macOS for the helper scripts; the steps work on any OS if you copy by hand). Node 18 or newer for the usage server.
 - Kindle Wi-Fi on a **2.4 GHz** network.
+
+## Want something purpose-built? See more
+
+The Kindle is a fun use for a spare device, but it needs a jailbreak, a cable and a 5-minute redraw. If what you actually want is Claude and Codex usage on your desk, **ClawTicker** is built for that: an ESP32-S3 touch screen with a small Python daemon on your computer, no jailbreak involved, MIT licensed.
+
+![ClawTicker showing Claude and Codex usage](docs/images/clawticker-ai-usage.jpg)
+
+- Source, firmware and install guide: [github.com/nateQQ/clawticker](https://github.com/nateQQ/clawticker)
+- Project page, build notes and the 3D-printed case: [natecue.com/project/clawticker](https://natecue.com/project/clawticker)
+
+The usage server in this repo can read ClawTicker's daemon as a data source (see [step 5](docs/05-usage-server.md)), which is how the two screens in the photo above show identical numbers.
 
 ## Steps
 

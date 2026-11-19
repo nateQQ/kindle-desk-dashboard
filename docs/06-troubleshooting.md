@@ -30,6 +30,10 @@ A crash log written during the jailbreak. Harmless. You can delete it.
 
 The server returns `{}` when the data is older than two hours, and the Kindle then shows "no data". If you see a plausible but wrong number, check which source the server is reading and its timestamp (`luc` in `usage.json`). We hit this once with a stale source file.
 
+![Dashboard in portrait showing 31% and 8% with the label "data 191 h old"](images/kindle-dashboard-portrait-stale-data.jpg)
+
+*This is what it looked like on our device: the plugin labels the data "191 h old" (about 8 days), because the server was serving an old file and had no freshness check. It is also the portrait layout. The numbers are from the stale source, not real usage.*
+
 ## Dashboard shows "no data" or "not connected"
 
 - Is the Kindle on the same 2.4 GHz network as the computer?
