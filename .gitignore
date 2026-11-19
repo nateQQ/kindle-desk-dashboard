@@ -1,0 +1,5 @@
+downloads/
+staging/
+node_modules/
+.DS_Store
+server/config.json

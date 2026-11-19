@@ -1,0 +1,8 @@
+{
+  "code": "replace-with-a-long-random-string",
+  "port": 8466,
+  "max_age_sec": 7200,
+  "clawticker_url": "",
+  "clawticker_token_file": "",
+  "clawticker_account": "Personal"
+}
